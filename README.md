@@ -11,6 +11,7 @@ Carte de voeux (numérique) pour souhaiter la bonne année à destination des cl
 - utilisation de différents hooks React (useState, useEffect) ainsi que de PropTypes
 - ajout d'un favicon personnalisé
 - gestion du responsive mobile, tablette et grand écran
+- utilisation de scss et minifaction du fichier style
 - build du projet et mise en ligne via FTP
 
 ## 🚀 Installation
