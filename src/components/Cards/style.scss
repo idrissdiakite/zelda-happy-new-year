@@ -1,0 +1,142 @@
+@import "../../styles/settings";
+
+.cards {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+  }
+
+  .card {
+    padding: 0.2rem;
+
+    img {
+      transform: scale(1);
+      transition: all 1s ease-in-out;
+      // permet d'obtenir une transition smooth lorsqu'on hover off
+      -webkit-transition: transform 1s;
+    }
+
+    img:hover {
+      transform: scale(1.2);
+      transition: all 1s ease-in-out;
+      -webkit-transition: transform 1s;
+    }
+
+    // selectionne toutes les images saufs celles avec la classe ".cursor"
+    img:not(.cursor) {
+      cursor: pointer;
+    }
+  }
+}
+
+.popup {
+  text-align: center;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .popup-img {
+    width: 800px;
+
+    @media screen and (min-width: 768px) {
+      width: 600px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 250px;
+      margin-right: 3rem;
+    }
+
+    @media screen and (min-width: 1400px) {
+      width: 325px;
+      margin-right: 3.5rem;
+    }
+  }
+
+  .header {
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 0.25rem;
+
+    @media screen and (min-width: 768px) {
+      margin-top: 1rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+      margin-top: -1.2rem;
+    }
+
+    @media screen and (min-width: 1400px) {
+      margin-top: -1.5rem;
+    }
+
+    .title {
+      font-weight: 100;
+      font-size: 35px;
+
+      @media screen and (min-width: 768px) {
+        font-size: 40px;
+      }
+
+      @media screen and (min-width: 1400px) {
+        font-size: 50px;
+      }
+    }
+
+    .subtitle {
+      font-weight: 700;
+      font-size: 17px;
+
+      @media screen and (min-width: 768px) {
+        font-size: 22px;
+      }
+
+      @media screen and (min-width: 1024px) {
+        font-size: 22px;
+        margin-top: -0.5rem;
+      }
+
+      @media screen and (min-width: 1400px) {
+        font-size: 32px;
+      }
+    }
+  }
+
+  .text {
+    font-weight: 300;
+    font-size: 12px;
+    margin-top: 1rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      margin-top: 1.5rem;
+    }
+
+    @media screen and (min-width: 1024px) {
+      font-size: 13px;
+      margin-top: 0.5rem;
+    }
+
+    @media screen and (min-width: 1400px) {
+      font-size: 18px;
+    }
+
+    // annule le retour à la ligne (br) pour mobiles, tablettes et grands écrans
+    .none {
+      @media screen and (max-width: 998px) {
+        display: none;
+      }
+      @media screen and (min-width: 1400px) {
+        display: none;
+      }
+    }
+  }
+}

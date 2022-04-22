@@ -1,0 +1,41 @@
+// Fonts
+
+@font-face {
+  font-family: "BeVietnam";
+  src: url(./../assets/fonts/BeVietnam-Thin.ttf);
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: "BeVietnam";
+  src: url(./../assets/fonts/BeVietnam-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "BeVietnam";
+  src: url(./../assets/fonts/BeVietnam-SemiBold.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "BeVietnam";
+  src: url(./../assets/fonts/BeVietnam-Bold.ttf);
+  font-weight: 700;
+}
+
+$bevietnam: "BeVietnam", sans-serif;
+
+// Color
+
+$orange: #f7ad77;
+$salmon: #f18c92;
+$pink: #ec6798;
+$orange-dark: #da7857;
+$green: #add3a0;
+$violet: #7c87c2;
+$yellow: #fcc10a;
+
+// Background color
+
+$blue: #1a1c36;

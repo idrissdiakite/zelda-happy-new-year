@@ -1,0 +1,62 @@
+@import "./settings";
+@import "../components/Cards/style.scss";
+@import "../components/Loader/style.scss";
+@import "../components/Modal/style.scss";
+@import "../pages/Homepage/style.scss";
+@import "../pages/NotFound/style.scss";
+
+// RESET
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+ol,
+ul {
+  list-style: none;
+}
+a,
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// GLOBAL
+
+*,
+html {
+  font-family: $bevietnam;
+  font-weight: 300;
+}
+
+body {
+  background-color: $blue;
+}
+
+.container {
+  padding: 1.5rem;
+
+  @media screen and (min-width: 768px) {
+    margin: 0 auto;
+    padding: 4rem 3rem 3rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin: 0 auto;
+    padding: 5rem;
+    width: 90%;
+  }
+}
